@@ -81,4 +81,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/edi2410/dev-homebudgetapi-fastapi:latest
