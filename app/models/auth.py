@@ -1,5 +1,6 @@
 from typing import Optional
 
+from pydantic import EmailStr
 from sqlmodel import SQLModel, Field
 
 
@@ -8,10 +9,10 @@ class Token(SQLModel):
     token_type: str
 
 class TokenData(SQLModel):
-    email: str | None = None
+    email: EmailStr | None = None
 
 class User(SQLModel):
-    email: str
+    email: EmailStr
     first_name: str | None = None
     last_name: str | None = None
 
