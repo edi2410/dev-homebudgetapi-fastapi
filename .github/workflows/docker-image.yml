@@ -5,6 +5,10 @@ on:
     branches: [ "prod" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write   #
+
 jobs:
   lint:
     name: Lint code
