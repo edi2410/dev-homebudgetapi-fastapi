@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: write   # treba za push badge-a u repozitorij
+  contents: write   
 
 jobs:
   test:
